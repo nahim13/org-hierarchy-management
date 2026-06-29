@@ -28,5 +28,4 @@ build the tree out from there.
 
 
 See `backend/README.md` and `frontend/README.md` for the per-app
-details, and `PROJECT_PLAN.pdf` for the original reasoning this build
-follows.
+details.
