@@ -1,8 +1,7 @@
 # Organizational Hierarchy Management — Full Stack
 
 `backend/` (NestJS + PostgreSQL + TypeORM) + `frontend/` (Next.js).
-Built against `PROJECT_PLAN.md` (the de-conflicted final plan included
-in this repo as `PROJECT_PLAN.pdf`).
+
 
 ## Quick start
 
