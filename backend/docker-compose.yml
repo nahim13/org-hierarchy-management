@@ -1,0 +1,21 @@
+version: '3.8'
+
+# Optional convenience: spins up just the Postgres database. The API and
+# the frontend are still run with `npm run start:dev` / `npm run dev`
+# against this database. Not required - core functionality does not
+# depend on Docker.
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: orga_structure
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
